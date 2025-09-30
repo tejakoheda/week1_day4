@@ -1,19 +1,13 @@
-// function App(){
-//   let names="raviteja"
-//   let a=10;
-//   let age=21;
-//   return <h1>hello,{names}! your age is {a+age}</h1>
-// }
-// // export default App;
-
-import Hello from "./Hello";
-function App() {
-  return (
+function app(){
+  let name="Teja";
+  let age=22;
+  let college="JNTU";
+  return(
     <div>
-      <h1>My App</h1>
-      <Hello />
+      <h1>my name is {name}</h1>
+      <i>and my age is  {age}</i>
+      <p> i've completed my graduation in {college}</p>
     </div>
-  );
+  )
 }
-
-export default App;
+export default app;

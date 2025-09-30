@@ -1,11 +1,5 @@
-import './App.css';
-
-
-
-
-function App() {
-  const name = "Raviteja";
-  return <h1>Hello, {name}! Welcome to React.</h1>;
+function App(){
+  let names="raviteja"
+  return <h1>hello,{names}!</h1>
 }
 export default App;
-

@@ -1,13 +1,21 @@
-function app(){
-  let name="Teja";
-  let age=22;
-  let college="JNTU";
-  return(
+function Challenge() {
+  let Myname = "Teja";
+  let internship_name = "Intern-Technology in Volta";
+  let skills = ["HTML", "CSS", "JavaScript"]; // use array
+
+  return (
     <div>
-      <h1>my name is {name}</h1>
-      <i>and my age is  {age}</i>
-      <p> i've completed my graduation in {college}</p>
+      <h1>My name is {Myname}</h1>
+      <h2>I am doing internship in {internship_name}</h2>
+      <h3>My skills are:</h3>
+      <ol>
+        {skills.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ol>
+      <button>Hire Me</button>
     </div>
-  )
+  );
 }
-export default app;
+
+export default Challenge;

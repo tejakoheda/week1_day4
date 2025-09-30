@@ -1,21 +1,16 @@
-function Challenge() {
-  let Myname = "Teja";
-  let internship_name = "Intern-Technology in Volta";
-  let skills = ["HTML", "CSS", "JavaScript"]; // use array
+
+
+function Cal() {
+  const a = 10;
+  const b = 20;
 
   return (
     <div>
-      <h1>My name is {Myname}</h1>
-      <h2>I am doing internship in {internship_name}</h2>
-      <h3>My skills are:</h3>
-      <ol>
-        {skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
-        ))}
-      </ol>
-      <button>Hire Me</button>
+      <h2>Math Operations</h2>
+      <p>Addition: {a + b}</p>
+      <p>Multiplication: {a * b}</p>
     </div>
   );
 }
 
-export default Challenge;
+export default Cal; ;

@@ -1,15 +1,18 @@
-const Car = () => {
-  return (
-    <h2>I am a Car!</h2>
-  );
-};
+import Firstcomp from "./prop/Firstcomp"
+import Secondcomp from "./prop/Secondcomp"
+import Thirdcomp from "./prop/Thirdcomp"
+import Fourthcomp from "./prop/Fourthcomp"
+import './App.css';
 
-const Garage = () => {
+function app() {
   return (
-    <>
-      <h1>Who lives in my Garage?</h1>
-      <Car />
-    </>
-  );
-};
-export default Garage
+    <div>
+      <Firstcomp name="teja"/>
+      <Secondcomp name="ravi" />
+      <Thirdcomp name="lavi" />
+      <Fourthcomp name="sai" />
+    </div>
+  )
+}
+
+export default app

@@ -1,16 +1,12 @@
+import Welcome, { Study } from "./Hello";  
 
-
-function Cal() {
-  const a = 10;
-  const b = 20;
-
+function App() {
   return (
     <div>
-      <h2>Math Operations</h2>
-      <p>Addition: {a + b}</p>
-      <p>Multiplication: {a * b}</p>
+      <Welcome />
+      <Study />
     </div>
   );
 }
 
-export default Cal; 
+export default App;

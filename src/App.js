@@ -5,9 +5,14 @@ import Fourthcomp from "./prop/Fourthcomp"
 import './App.css';
 
 function app() {
+  const user={
+    name:"teja",
+    age:21,
+    city:"hyd",
+  };
   return (
     <div>
-      <Firstcomp name="teja"/>
+      <Firstcomp name={user.name}/>
       <Secondcomp name="ravi" />
       <Thirdcomp name="lavi" />
       <Fourthcomp name="sai" />

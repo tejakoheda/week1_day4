@@ -1,10 +1,12 @@
 function App() {
-  const showMsg = () => {
-    console.log(" clicked!");
-  };
+  const greetUser=(name)=>{
+    alert(`Hello ${name}!`);
+  }
 
   return (
-      <button onClick={showMsg}>Click</button>
+    <div>
+      <button onClick={() => greetUser("Teja")}>Greet Me</button>
+    </div>
   );
 }
 

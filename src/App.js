@@ -1,9 +1,11 @@
+function App() {
+  const showMsg = () => {
+    console.log(" clicked!");
+  };
 
-function App(){
-alert("hello" );
-return(
-  <button onClick={App}>click me</button>
-)
+  return (
+      <button onClick={showMsg}>Click</button>
+  );
 }
-export default App;
 
+export default App;

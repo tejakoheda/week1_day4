@@ -1,7 +1,20 @@
-const Firstcomp = (props) => {
+const AlertBox = (props) => {
   return (
-    <div>{props.name}</div>
-  )
-}
+    <div
+      style={{
+        border: "2px solid red",
+        padding: "10px",
+        margin: "10px",
+        borderRadius: "10px",
+      }}
+    >
+      {/* props.children displays whatever is written inside <AlertBox>... </AlertBox> */}
+      {props.children}
 
-export default Firstcomp
+      {/* Button calls function received from parent */}
+      <button onClick={props.onAlert}>Show Alert</button>
+    </div>
+  );
+};
+
+export default AlertBox;

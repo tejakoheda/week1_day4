@@ -1,23 +1,22 @@
-import Firstcomp from "./prop/Firstcomp"
-import Secondcomp from "./prop/Secondcomp"
-import Thirdcomp from "./prop/Thirdcomp"
-import Fourthcomp from "./prop/Fourthcomp"
-import './App.css';
+import AlertBox from "./prop/Firstcomp";
 
-function app() {
-  const user={
-    name:"teja",
-    age:21,
-    city:"hyd",
+
+
+function App() {
+  // Function defined in parent
+  const showMessage = () => {
+    alert("Hello Teja! You clicked the button.");
   };
+
   return (
     <div>
-      <Firstcomp name={user.name}/>
-      <Secondcomp name="ravi" />
-      <Thirdcomp name="lavi" />
-      <Fourthcomp name="sai" />
+      {/* Sending function as prop (onAlert) */}
+      {/* Sending content as children */}
+      <AlertBox onAlert={showMessage}>
+        <h3>Click the button to see an alert message!</h3>
+      </AlertBox>
     </div>
-  )
+  );
 }
 
-export default app
+export default App;

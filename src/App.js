@@ -1,17 +1,21 @@
 import { useState } from "react";
 
-function ToggleText() {
-  const [show, setShow] = useState(true);
+function InputExample() {
+  const [name, setName] = useState("");
 
   return (
     <div>
-      {show ? <p>Hello</p> : <p>Text Hidden</p>}
-      <button onClick={() => setShow(!show)}>
-        {show ? "Hide Text" : "Show Text"}
-      </button>
+      <input
+        type="text"
+        placeholder="Enter your name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <h3>Hello, {name}</h3>
     </div>
   );
 }
 
-export default ToggleText;
+export default InputExample;
+
 

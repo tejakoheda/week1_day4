@@ -1,21 +1,9 @@
-import { useState } from "react";
 
-function InputExample() {
-  const [name, setName] = useState("");
-
-  return (
-    <div>
-      <input
-        type="text"
-        placeholder="Enter your name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <h3>Hello, {name}</h3>
-    </div>
-  );
+function App(){
+alert("hello" );
+return(
+  <button onClick={App}>click me</button>
+)
 }
-
-export default InputExample;
-
+export default App;
 

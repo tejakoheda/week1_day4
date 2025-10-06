@@ -1,11 +1,4 @@
-function App() {
-  const logged = false;
-
-  if (logged) {
-    return <h2>Welcome, Teja! </h2>;
-  } else {
-    return <h2>Please Login First </h2>;
-  }
-}
-
+function App(){
+  const age=22;
+ return (<p>{age>18? "elgible to vote": "not elgible to vote"}</p>);}
 export default App;

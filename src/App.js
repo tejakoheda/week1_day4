@@ -1,13 +1,11 @@
 function App() {
-  const greetUser=(name)=>{
-    alert(`Hello ${name}!`);
-  }
+  const logged = false;
 
-  return (
-    <div>
-      <button onClick={() => greetUser("Teja")}>Greet Me</button>
-    </div>
-  );
+  if (logged) {
+    return <h2>Welcome, Teja! </h2>;
+  } else {
+    return <h2>Please Login First </h2>;
+  }
 }
 
 export default App;
